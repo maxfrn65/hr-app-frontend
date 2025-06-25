@@ -33,7 +33,9 @@ export default function EmployeePage() {
     };
 
     useEffect(() => {
-        getEmployees().then(res => setEmployees(res.data));
+        getEmployees().then(res => {
+            setEmployees(res.data);
+        })
     }, []);
 
     return (
